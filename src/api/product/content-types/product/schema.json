@@ -26,6 +26,24 @@
     },
     "slug": {
       "type": "string"
+    },
+    "imgUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "discount": {
+      "type": "boolean",
+      "default": true
+    },
+    "fakePrice": {
+      "type": "decimal"
     }
   }
 }
