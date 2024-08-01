@@ -379,9 +379,9 @@ export interface ApiProductProduct extends Schema.CollectionType {
     price: Attribute.Decimal;
     category: Attribute.String;
     slug: Attribute.String;
-    banner: Attribute.Media<'images'> & Attribute.Required;
     discount: Attribute.Boolean & Attribute.DefaultTo<true>;
     fakePrice: Attribute.Decimal;
+    banner: Attribute.Media<'images'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

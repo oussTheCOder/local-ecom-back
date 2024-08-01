@@ -27,20 +27,19 @@
     "slug": {
       "type": "string"
     },
-    "banner": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "discount": {
       "type": "boolean",
       "default": true
     },
     "fakePrice": {
       "type": "decimal"
+    },
+    "banner": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
