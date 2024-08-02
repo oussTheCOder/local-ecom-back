@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wilayas",
+  "info": {
+    "singularName": "wilaya",
+    "pluralName": "wilayas",
+    "displayName": "wilayas"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "shippingPrice": {
+      "type": "decimal"
+    }
+  }
+}
