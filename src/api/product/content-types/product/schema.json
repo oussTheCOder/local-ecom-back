@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
-    },
     "price": {
       "type": "decimal"
     },
@@ -35,11 +32,15 @@
       "type": "decimal"
     },
     "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "details": {
+      "type": "richtext"
     }
   }
 }
