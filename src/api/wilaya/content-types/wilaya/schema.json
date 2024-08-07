@@ -4,7 +4,8 @@
   "info": {
     "singularName": "wilaya",
     "pluralName": "wilayas",
-    "displayName": "wilayas"
+    "displayName": "wilayas",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,9 @@
     },
     "shippingPrice": {
       "type": "decimal"
+    },
+    "wilayaNumber": {
+      "type": "integer"
     }
   }
 }

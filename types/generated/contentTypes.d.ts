@@ -406,6 +406,7 @@ export interface ApiWilayaWilaya extends Schema.CollectionType {
     singularName: 'wilaya';
     pluralName: 'wilayas';
     displayName: 'wilayas';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -413,6 +414,7 @@ export interface ApiWilayaWilaya extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     shippingPrice: Attribute.Decimal;
+    wilayaNumber: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
