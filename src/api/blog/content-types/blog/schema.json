@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog",
     "pluralName": "blogs",
-    "displayName": "blogs"
+    "displayName": "blogs",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -33,11 +34,12 @@
       "type": "text"
     },
     "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -50,7 +52,7 @@
           "localized": true
         }
       },
-      "type": "blocks"
+      "type": "richtext"
     }
   }
 }
