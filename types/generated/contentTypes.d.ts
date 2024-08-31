@@ -812,12 +812,6 @@ export interface ApiBlogBlog extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    overview: Attribute.Text &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     mainImage: Attribute.Media<'images'> &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -835,6 +829,18 @@ export interface ApiBlogBlog extends Schema.CollectionType {
       'manyToOne',
       'api::category.category'
     >;
+    overview: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    tableOfContents: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
